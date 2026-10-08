@@ -1,0 +1,16 @@
+{
+  "name": "Solara Travel and Tours Services",
+  "short_name": "Solara Travels",
+  "description": "Visa assistance, flights, hotels and curated tour packages from Pretoria to destinations around the world.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f5ef",
+  "theme_color": "#063f2c",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

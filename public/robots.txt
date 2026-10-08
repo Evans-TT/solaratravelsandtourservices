@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Host: solaratravelsandtourservices.com
+Sitemap: https://solaratravelsandtourservices.com/sitemap.xml
