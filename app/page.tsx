@@ -14,7 +14,6 @@ type Visa = {
   country: string;
   label: string;
   mode: string;
-  price: string;
   processing: string;
   validity: string;
   entry: string;
@@ -30,92 +29,92 @@ const whatsapp = (message: string) =>
 
 const visas: Visa[] = [
   {
-    country: "Qatar", label: "Qatar eVisa", mode: "eVisa", price: "N120,000",
+    country: "Qatar", label: "Qatar eVisa", mode: "eVisa",
     processing: "5 days", validity: "90 days", entry: "Single entry", flag: "🇶🇦", region: "Middle East", image: "/destinations/qatar.jpg",
     requirements: ["Passport data page", "Passport photograph on a white background", "Confirmed return flight ticket", "Hotel booking (must be confirmed by us)"],
   },
   {
-    country: "Tanzania", label: "Tanzania eVisa", mode: "eVisa", price: "N250,000",
+    country: "Tanzania", label: "Tanzania eVisa", mode: "eVisa",
     processing: "7 working days", validity: "90 days", entry: "Single entry", flag: "🇹🇿", region: "Africa", image: "/destinations/tanzania.jpg",
     requirements: ["International passport bio page, valid for at least 6 months", "Recent passport photograph on a white background", "Hotel booking confirmation matching your travel dates", "Round-trip flight ticket"],
   },
   {
-    country: "South Africa", label: "South Africa eVisa", mode: "eVisa", price: "N1,000,000",
+    country: "South Africa", label: "South Africa eVisa", mode: "eVisa",
     processing: "5–10 working days", validity: "30–90 days", entry: "Single / multiple", flag: "🇿🇦", region: "Africa", image: "/destinations/south-africa.jpg",
     requirements: ["Valid international passport data page", "Passport photograph on a white background", "Three months bank statement", "Yellow Fever Card (compulsory)"],
   },
   {
-    country: "Kenya", label: "Kenya eTA", mode: "eTA", price: "N100,000",
+    country: "Kenya", label: "Kenya eTA", mode: "eTA",
     processing: "1–3 days", validity: "90 days", entry: "Single entry", flag: "🇰🇪", region: "Africa", image: "/destinations/kenya.jpg",
     requirements: ["Passport bio data page, valid for at least 6 months", "Passport photograph on a white background", "Confirmed hotel reservation", "Round-trip flight ticket"],
   },
   {
-    country: "Morocco", label: "Morocco eVisa", mode: "eVisa", price: "N250,000",
+    country: "Morocco", label: "Morocco eVisa", mode: "eVisa",
     processing: "2 days", validity: "180 days", entry: "Single entry", flag: "🇲🇦", region: "Africa", image: "/destinations/morocco.jpg",
     requirements: ["Passport data page", "Passport photograph on a white background", "Copy of a valid UK, USA, Canada, Schengen or Australian visa"],
   },
   {
-    country: "Egypt", label: "Egypt Visa on Arrival", mode: "Okay to Board", price: "N230,000",
+    country: "Egypt", label: "Egypt Visa on Arrival", mode: "Okay to Board",
     processing: "2 days", validity: "30 days", entry: "Single entry", flag: "🇪🇬", region: "Africa", image: "/destinations/egypt.jpg",
-    requirements: ["Passport data page", "Confirmed flight ticket on Egypt Air or Ethiopian Airlines", "Passport photograph on a white background", "Proof of accommodation", "USD 36 cash fee payable on arrival"],
+    requirements: ["Passport data page", "Confirmed flight ticket on Egypt Air or Ethiopian Airlines", "Passport photograph on a white background", "Proof of accommodation"],
   },
   {
-    country: "Nigeria", label: "Nigeria Tourist eVisa", mode: "eVisa (F5A)", price: "From N350,000",
+    country: "Nigeria", label: "Nigeria Tourist eVisa", mode: "eVisa (F5A)",
     processing: "5–7 days", validity: "90 days", entry: "Single entry", flag: "🇳🇬", region: "Africa", image: "/destinations/nigeria.jpg",
     requirements: ["Passport data page", "Passport photograph on a white background", "Return flight ticket", "Hotel booking or accommodation details", "Six months bank statement"],
   },
   {
-    country: "United Kingdom", label: "UK Standard Visitor Visa", mode: "Sticker visa", price: "From N500,000",
+    country: "United Kingdom", label: "UK Standard Visitor Visa", mode: "Sticker visa",
     processing: "15 working days", validity: "6 months", entry: "Multiple entry", flag: "🇬🇧", region: "Europe", image: "/destinations/united-kingdom.jpg",
     requirements: ["Valid passport with at least 6 months validity", "Passport photograph on a white background", "Six months bank statements", "Proof of ties to your home country", "Invitation letter, if applicable"],
   },
   {
-    country: "East Africa", label: "East Africa Tourist Visa", mode: "1 visa, 3 countries", price: "N350,000",
+    country: "East Africa", label: "East Africa Tourist Visa", mode: "1 visa, 3 countries",
     processing: "4–7 business days", validity: "90 days", entry: "Multiple entry", flag: "🌍", region: "Africa", image: "/destinations/east-africa.jpg",
     requirements: ["Passport data page, valid for at least 6 months", "Passport photograph on a white background", "Travel itinerary or return ticket", "Hotel reservations or host letter", "Proof of funds / bank statement", "Yellow Fever Card (mandatory)"],
   },
   {
-    country: "Zambia", label: "Zambia eVisa", mode: "eVisa", price: "N250,000",
+    country: "Zambia", label: "Zambia eVisa", mode: "eVisa",
     processing: "5–7 working days", validity: "90 days", entry: "Single entry", flag: "🇿🇲", region: "Africa", image: "/destinations/zambia.jpg",
     requirements: ["Passport data page, valid for at least 6 months", "Passport photograph on a white background", "Hotel reservation", "Confirmed round-trip flight ticket", "Cover letter (required for a business visa)"],
   },
   {
-    country: "France", label: "France Schengen Visa", mode: "Sticker visa", price: "N300,000",
+    country: "France", label: "France Schengen Visa", mode: "Sticker visa",
     processing: "10–15 working days", validity: "180 days", entry: "Multiple entry", flag: "🇫🇷", region: "Europe", image: "/destinations/france.jpg",
     requirements: ["Valid passport with at least 6 months validity and two blank pages", "Completed Schengen application form", "Two passport photographs to Schengen specifications", "Round-trip flight reservation", "Hotel booking or invitation letter", "Travel insurance with €30,000 cover", "Proof of funds and ties to your home country"],
   },
   {
-    country: "Belgium", label: "Belgium Schengen Visa", mode: "Sticker visa", price: "N300,000",
+    country: "Belgium", label: "Belgium Schengen Visa", mode: "Sticker visa",
     processing: "15 business days", validity: "180 days", entry: "Single / multiple", flag: "🇧🇪", region: "Europe", image: "/destinations/belgium.jpg",
     requirements: ["Valid passport with two blank pages, issued within the last 10 years", "Completed Visa On Web application form", "Two recent 35 × 45 mm colour photographs", "Round-trip flight itinerary", "Travel insurance with minimum €30,000 medical cover", "Hotel reservation or invitation letter", "Recent bank statements and supporting employment or business letters"],
   },
   {
-    country: "Uganda", label: "Uganda eVisa", mode: "eVisa", price: "N250,000",
+    country: "Uganda", label: "Uganda eVisa", mode: "eVisa",
     processing: "3–7 working days", validity: "90 days", entry: "Single entry", flag: "🇺🇬", region: "Africa", image: "/destinations/uganda.jpg",
     requirements: ["Passport data page with at least 6 months validity", "Recent passport photograph on a white background", "Yellow Fever Vaccination Certificate"],
   },
   {
-    country: "Indonesia", label: "Indonesia eVisa", mode: "eVisa", price: "N750,000",
+    country: "Indonesia", label: "Indonesia eVisa", mode: "eVisa",
     processing: "7 working days", validity: "90 days", entry: "Single entry", flag: "🇮🇩", region: "Asia", image: "/destinations/indonesia.jpg",
     requirements: ["International passport data page, valid for at least 6 months", "Passport photograph on a white background"],
   },
   {
-    country: "Dubai", label: "Dubai Visit Visa", mode: "eVisa", price: "N1,500,000",
+    country: "Dubai", label: "Dubai Visit Visa", mode: "eVisa",
     processing: "5 working days", validity: "60 days", entry: "Single entry", flag: "🇦🇪", region: "Middle East", image: "/destinations/dubai.jpg",
     requirements: ["Applicant must be 41 years or older", "International passport valid for at least 6 months", "Recent passport photograph on a white background", "Six months bank statement"],
   },
   {
-    country: "Ethiopia", label: "Ethiopia eVisa", mode: "eVisa", price: "N250,000",
+    country: "Ethiopia", label: "Ethiopia eVisa", mode: "eVisa",
     processing: "3–5 days", validity: "30 days", entry: "Single entry", flag: "🇪🇹", region: "Africa", image: "/destinations/ethiopia.jpg",
     requirements: ["Passport data page, valid for at least 6 months", "Recent passport photograph on a white background", "Travel itinerary and accommodation details"],
   },
   {
-    country: "Seychelles", label: "Seychelles eTA", mode: "eTA", price: "N200,000",
+    country: "Seychelles", label: "Seychelles eTA", mode: "eTA",
     processing: "1–3 days", validity: "Travel dates", entry: "Single trip", flag: "🇸🇨", region: "Africa", image: "/destinations/seychelles.jpg",
     requirements: ["Passport data page, valid for the duration of your stay", "Recent passport photograph", "Confirmed return or onward ticket", "Confirmed accommodation", "Proof of sufficient funds"],
   },
   {
-    country: "China", label: "China Business Visa", mode: "Sticker visa", price: "N1,100,000",
+    country: "China", label: "China Business Visa", mode: "Sticker visa",
     processing: "10–15 business days", validity: "90 days", entry: "Single entry", flag: "🇨🇳", region: "Asia", image: "/destinations/china.jpg",
     requirements: ["International passport valid for at least 6 months", "Passport photograph", "Old visa or any valid visa", "CAC Certificate", "Six months bank statement"],
   },
@@ -212,7 +211,6 @@ export default function Home() {
               </div>
               <p className="visa-kicker">Get a visa to</p><h3>{visa.country}</h3>
               <div className="visa-meta"><span><Clock3 size={15} /> {visa.processing}</span><span><CalendarDays size={15} /> {visa.validity}</span></div>
-              <div className="visa-price"><small>Assistance from</small><strong>{visa.price}</strong></div>
               <div className="visa-actions"><button type="button" onClick={() => setSelectedVisa(visa)}>View requirements</button><a href={whatsapp(`Hello Solara Travels, I would like to apply for the ${visa.label}.`)} target="_blank" rel="noreferrer">Apply now</a></div>
             </article>
           ))}
@@ -258,7 +256,7 @@ export default function Home() {
         <DialogContent className="visa-dialog">
           {selectedVisa && <><DialogHeader><span className="dialog-flag" aria-hidden="true">{selectedVisa.flag}</span><p className="eyebrow green">Visa requirements</p><DialogTitle>{selectedVisa.label}</DialogTitle><DialogDescription>{selectedVisa.processing} processing · {selectedVisa.validity} validity · {selectedVisa.entry}</DialogDescription></DialogHeader>
             <div className="dialog-body"><h4><FileCheck2 size={19} /> Required documents</h4><ul>{selectedVisa.requirements.map((requirement) => <li key={requirement}><Check size={16} /> <span>{requirement}</span></li>)}</ul><div className="dialog-note"><ShieldCheck size={20} /><p>Our team reviews your documents before submission and guides you through every step.</p></div></div>
-            <div className="dialog-actions"><span><small>Assistance from</small><strong>{selectedVisa.price}</strong></span><a className="button button-gold" href={whatsapp(`Hello Solara Travels, I would like to apply for the ${selectedVisa.label}.`)} target="_blank" rel="noreferrer"><MessageCircle size={18} /> Apply on WhatsApp</a></div></>}
+            <div className="dialog-actions"><p>Message our visa desk on WhatsApp for current pricing and application support.</p><a className="button button-gold" href={whatsapp(`Hello Solara Travels, I would like to apply for the ${selectedVisa.label}.`)} target="_blank" rel="noreferrer"><MessageCircle size={18} /> Apply on WhatsApp</a></div></>}
         </DialogContent>
       </Dialog>
     </main>
